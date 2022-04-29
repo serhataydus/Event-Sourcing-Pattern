@@ -3,9 +3,45 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{929673FC-2B6F-49F8-91A6-471AC2EB67F7}"
+	ProjectSection(SolutionItems) = preProject
+		Docker\docker-compose.yml = Docker\docker-compose.yml
+		Docker\Dockerfile = Docker\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{678D43DB-4023-46EC-B511-A690389E159B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1B1B7B3D-D950-43E8-BBB8-55F96109FCD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3DE3E8E0-DEA6-49D3-966E-3A8B5B03A7D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourcing.Shared", "Source\Core\EventSourcing.Shared\EventSourcing.Shared.csproj", "{052CE0C1-4CF9-4761-B20D-B2A9E766BB00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourcing.WebApi", "Source\Modules\EventSourcing.WebApi\EventSourcing.WebApi.csproj", "{821A66AF-97B5-4CEF-BC48-4AC3823CCB85}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{052CE0C1-4CF9-4761-B20D-B2A9E766BB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052CE0C1-4CF9-4761-B20D-B2A9E766BB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052CE0C1-4CF9-4761-B20D-B2A9E766BB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052CE0C1-4CF9-4761-B20D-B2A9E766BB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{821A66AF-97B5-4CEF-BC48-4AC3823CCB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821A66AF-97B5-4CEF-BC48-4AC3823CCB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821A66AF-97B5-4CEF-BC48-4AC3823CCB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821A66AF-97B5-4CEF-BC48-4AC3823CCB85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B1B7B3D-D950-43E8-BBB8-55F96109FCD7} = {678D43DB-4023-46EC-B511-A690389E159B}
+		{3DE3E8E0-DEA6-49D3-966E-3A8B5B03A7D9} = {678D43DB-4023-46EC-B511-A690389E159B}
+		{052CE0C1-4CF9-4761-B20D-B2A9E766BB00} = {1B1B7B3D-D950-43E8-BBB8-55F96109FCD7}
+		{821A66AF-97B5-4CEF-BC48-4AC3823CCB85} = {3DE3E8E0-DEA6-49D3-966E-3A8B5B03A7D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEA43E92-D501-4160-BCE1-FBD6DD70266F}
