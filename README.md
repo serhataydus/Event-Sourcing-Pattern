@@ -1,4 +1,4 @@
-# Event-Sourcing-Pattern
+# Event Sourcing Pattern
 .Net Core Event Sourcing Pattern
 
 DockerFile üzerinden Event Store ayağa kaldırmak için kullanılacak kodlar
